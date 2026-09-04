@@ -1,0 +1,103 @@
+.bodysignup {
+    margin: auto;
+    font-family: Arial, sans-serif;
+    /* background: linear-gradient(135deg, #71e0e6, #9b59b6); */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/pencils-clips-colour-pencils-foam-rubber.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+   overflow: hidden;
+ }
+ 
+ 
+ 
+ 
+ .containersignup {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    border: solid 5px rgb(30, 158, 243);;
+    width: 330px;
+    text-align: center;
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ .input-groupsignup {
+    margin-bottom: 15px;
+    text-align: left;
+ }
+ 
+ 
+ 
+ 
+ .containersignup label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px;
+ }
+ 
+ 
+ 
+ 
+ .containersignup input {
+    width: 90%;
+    padding: 10px;
+    border: 2px solid #179bcf6e;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 10px;
+ }
+ 
+ 
+ 
+ 
+ .buttonsignup {
+    width: 97%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+ }
+ 
+ 
+ 
+ 
+ .buttonsignup:hover {
+    background-color: #00684A;
+    }
+   a{
+    text-decoration: none;
+   }
+   /* a:hover{
+    text-decoration: underline;
+ } */
+ .s1signup{
+    display: flex;
+    align-items: center;
+    a{
+        text-decoration: none;
+        color: #3498DB;
+    }
+ }
+ .s1signup a:hover{
+    color: #00684A;
+ }

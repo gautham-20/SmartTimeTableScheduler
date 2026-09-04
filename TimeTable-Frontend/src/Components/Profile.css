@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Implemented from profile.css — scoped under .bodyprofile for React */
+.bodyprofile {
+  text-decoration: none;
+  font-family: "Open Sans", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  color: #00684A;
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.bodyprofile h1,
+.bodyprofile h2,
+.bodyprofile .profile-heading,
+.bodyprofile .section-heading {
+  text-align: center;
+  color: #00684A;
+  margin: 20px 0;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px rgba(176, 151, 151, 0.1);
+}
+
+.bodyprofile form,
+.bodyprofile .form-container {
+  margin: 20px auto;
+  max-width: 600px;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.bodyprofile form label,
+.bodyprofile .form-label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #2e7d32;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.bodyprofile form input,
+.bodyprofile form select,
+.bodyprofile .form-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #a5d6a7;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.bodyprofile form input:focus,
+.bodyprofile form select:focus,
+.bodyprofile .form-input:focus {
+  border-color: #81c784;
+  outline: none;
+  box-shadow: 0 0 5px rgba(129, 199, 132, 0.5);
+}
+
+.bodyprofile form button,
+.bodyprofile .form-button {
+  padding: 12px 20px;
+  background: #00684A;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.bodyprofile form button:hover,
+.bodyprofile .form-button:hover {
+  background: #004D3A;
+  transform: scale(1.05);
+}
+
+.bodyprofile ul,
+.bodyprofile .class-list,
+.bodyprofile .staff-list {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 0;
+  list-style: none;
+}
+
+.bodyprofile ul li,
+.bodyprofile .class-item,
+.bodyprofile .staff-item,
+.bodyprofile .no-staff {
+  background: #ffffff;
+  margin: 10px 0;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  color: #00684A;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.bodyprofile ul li button,
+.bodyprofile .remove-button {
+  padding: 8px 15px;
+  background: rgb(240, 48, 48);
+  color: white;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: auto;
+  margin: 0;
+}
+
+.bodyprofile ul li button:hover,
+.bodyprofile .remove-button:hover {
+  background: darkred;
+}
+
+.bodyprofile table {
+  width: 95%;
+  /* NOTE: border-collapse:collapse drops 1px borders in canvas snapshots.
+     Separate model with spacing:0 keeps every grid line visible. */
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #ffffff;
+  border-top: 2px solid #000;
+  border-left: 2px solid #000;
+}
+
+.bodyprofile table th,
+.bodyprofile table td {
+  padding: 15px;
+  text-align: center;
+  /* Draw only right+bottom per cell — outer top/left come from the table.
+     No doubling, no missing lines. */
+  border-right: 1.5px solid #000;
+  border-bottom: 1.5px solid #000;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.bodyprofile table tr:first-child th {
+  border-top: 2px solid #000;
+}
+
+.bodyprofile table th:first-child,
+.bodyprofile table td:first-child {
+  border-left: 2px solid #000;
+}
+
+.bodyprofile table tr:last-child td {
+  border-bottom-width: 2px;
+}
+
+.bodyprofile table th:last-child,
+.bodyprofile table td:last-child {
+  border-right-width: 2px;
+}
+
+.bodyprofile table th {
+  background: #ffffff;
+  color: black;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.bodyprofile table td {
+  background: #ffffff;
+  color: black;
+  font-size: 1rem;
+}
+
+.bodyprofile #timetableContainer h3 {
+  margin-left: 80px;
+  color: #00684A;
+}
+
+.bodyprofile #timetableContainer table {
+  margin: 30px auto;
+}
+
+.bodyprofile .class-name {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #00684A;
+}
+
+.bodyprofile button,
+.bodyprofile .generate-button,
+.bodyprofile .download-button {
+  margin: 15px auto;
+  display: block;
+  padding: 15px 25px;
+  background: #00684A;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.bodyprofile button:hover,
+.bodyprofile .generate-button:hover,
+.bodyprofile .download-button:hover {
+  background: #004D3A;
+  transform: scale(1.05);
+}
+
+.bodyprofile .generate-button,
+.bodyprofile .download-button {
+  text-align: center;
+  width: 50%;
+  list-style: none;
+}
+
+.bodyprofile #cls {
+  display: none;
+}
+
+/* Top-right actions: Reset + Logout properly aligned */
+.bodyprofile .profile-actions {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 10;
+}
+
+.bodyprofile #res,
+.bodyprofile .logout-btn {
+  position: static;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  height: 38px;
+  padding: 0 18px;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: transform 0.18s ease, background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.bodyprofile #res {
+  background: #ffffff;
+  color: #d32f2f;
+  border-color: #ef9a9a;
+  box-shadow: 0 4px 14px rgba(211, 47, 47, 0.12);
+}
+
+.bodyprofile #res:hover {
+  background: #ffebee;
+  color: #b71c1c;
+  border-color: #e57373;
+  transform: translateY(-1px);
+}
+
+.bodyprofile .logout-btn {
+  background-color: #e53935;
+  color: white;
+  box-shadow: 0 4px 14px rgba(229, 57, 53, 0.3);
+}
+
+.bodyprofile .logout-btn:hover {
+  background-color: #c62828;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.bodyprofile #res:active,
+.bodyprofile .logout-btn:active {
+  transform: scale(0.97);
+}
+
+@media screen and (max-width:480px) {
+  .bodyprofile .profile-actions {
+    top: 10px;
+    right: 10px;
+    gap: 8px;
+  }
+
+  .bodyprofile #res,
+  .bodyprofile .logout-btn {
+    height: 34px;
+    padding: 0 14px;
+    font-size: 13px;
+    border-radius: 8px;
+  }
+
+  .bodyprofile h1,
+  .bodyprofile h2,
+  .bodyprofile .profile-heading,
+  .bodyprofile .section-heading {
+    text-align: center;
+    color: #00684A;
+    margin: 50px 0 20px 0;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgba(176, 151, 151, 0.1);
+  }
+
+  .bodyprofile #timetableContainer {
+    overflow-x: auto;
+  }
+
+  .bodyprofile #timetableContainer h3 {
+    margin-left: 40px;
+  }
+
+  .bodyprofile #timetableContainer table {
+    font-size: 0.85rem;
+  }
+
+  .bodyprofile #timetableContainer th,
+  .bodyprofile #timetableContainer td {
+    padding: 8px;
+  }
+
+  .bodyprofile form,
+  .bodyprofile .form-container {
+    margin: 20px 12px;
+    padding: 20px;
+  }
+
+  .bodyprofile ul li,
+  .bodyprofile .class-item,
+  .bodyprofile .staff-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .bodyprofile .generate-button,
+  .bodyprofile .download-button {
+    width: 80%;
+  }
+}
+
+/* ---- PDF export mode: applied temporarily during html2pdf capture ----
+   Forces a clean white sheet with crisp solid-black grid lines so the
+   canvas snapshot (and resulting PDF) is sharp, not blurry/grey. */
+.bodyprofile #timetableContainer.pdf-export {
+  background: #ffffff !important;
+  padding: 10px;
+}
+
+.bodyprofile #timetableContainer.pdf-export h3 {
+  margin: 16px 0 8px 0;
+  color: #000 !important;
+  text-align: center;
+  text-shadow: none !important;
+}
+
+.bodyprofile #timetableContainer.pdf-export table {
+  width: 100% !important;
+  margin: 0 0 20px 0 !important;
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+  border-top: 2px solid #000 !important;
+  border-left: 2px solid #000 !important;
+  background: #ffffff !important;
+  box-shadow: none !important;
+  page-break-inside: avoid;
+}
+
+.bodyprofile #timetableContainer.pdf-export th,
+.bodyprofile #timetableContainer.pdf-export td {
+  border: none !important;
+  border-right: 1.5px solid #000 !important;
+  border-bottom: 1.5px solid #000 !important;
+  background: #ffffff !important;
+  color: #000 !important;
+  padding: 10px 8px !important;
+  font-size: 12px !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.bodyprofile #timetableContainer.pdf-export th {
+  font-weight: 700 !important;
+}
+
+.bodyprofile #timetableContainer.pdf-export td small {
+  color: #000 !important;
+}

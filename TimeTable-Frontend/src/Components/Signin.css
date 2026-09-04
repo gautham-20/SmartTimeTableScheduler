@@ -1,0 +1,78 @@
+.bodysignin {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    /* background: linear-gradient(135deg, #71e0e6, #9b59b6); */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/pencils-clips-colour-pencils-foam-rubber.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+ }
+ 
+ 
+ 
+ 
+ .containersignin {
+    background-color: aliceblue;
+    padding: 30px;
+    border-radius: 10px;
+    border: solid 5px rgb(30, 158, 243);
+    width: 370px;
+ }
+ 
+ 
+ .input-groupsignin {
+    margin-bottom: 15px;
+    text-align: left;
+ }
+ 
+ 
+ 
+ 
+ .containersignin label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px;
+ }
+ 
+ 
+ 
+ 
+ .containersignin input {
+    width: 90%;
+    padding: 10px;
+    /* border: 1px solid rgb(23, 235, 104); */
+    border: 1px solid #179bcf6e;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 10px;
+ }
+ 
+ 
+ 
+ 
+ button {
+    width: 90%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00684A;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+ }
+ 
+ 
+ 
+ 
+ button:hover {
+    background-color: #00684A;
+    text-decoration: none;
+    }
+ 
+ 
